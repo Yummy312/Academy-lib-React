@@ -1,0 +1,79 @@
+.bookBody{
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    max-height: 150px;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+.bookContent{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    width: 84%;
+    
+    
+}
+
+.bookTitle{
+    font-size: 15px;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    margin-bottom: 5px;
+}
+
+
+.bookDescription{
+    color: #262626;
+    line-height: 21px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+    font-size: 14px;
+
+   
+}
+
+.bookImg{
+    width: 100px;
+    height: 120px;
+    margin-right: 30px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+
+
+@media (max-width: 1202px) {
+
+.bookTitle{
+    font-size: 15px;
+
+}
+
+.bookDescription{
+    font-size: 14px;
+}
+
+}
+
+
+@media (max-width: 668px){
+    .bookTitle{
+    font-size: 14px;
+
+    }
+    
+    .bookDescription{
+        font-size: 13px;
+    }
+
+}

@@ -1,0 +1,43 @@
+.body{
+    background-color: white;
+    padding: 21px;
+    margin-bottom: 50px;
+
+}
+
+.pageTitleWrapper{
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #F0F6FB;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.pageTitle{
+    display: inline-block;
+    color: #1E76B2;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.pageContent p{
+    color: #444444;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.pageContent p:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.socialNetworks{
+    margin-top: 50px;
+}
+
+.socialNetworks a:not(:last-child){
+    margin-right: 5px;
+
+}
+

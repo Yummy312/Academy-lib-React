@@ -1,0 +1,59 @@
+.body{
+    background-color: white;
+    padding: 21px;
+    margin-bottom: 50px;
+}
+
+
+.pageTitleWrapper{
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #F0F6FB;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.pageTitle{
+    display: inline-block;
+    color: #1E76B2;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.fondNavItem{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    border-bottom: 1px dashed #E2E2E2;
+}
+
+.fondNavItem:last-child{
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.fondNavItem:first-child{
+    padding-top: 0px;
+
+}
+
+.fondNavItemLink{
+    color:#555555;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    overflow: hidden; /* Скрыть переполнение */
+    word-wrap: break-word; /* Переносить слова */
+    word-break: break-word; /* Переносить слова */
+    white-space: normal; /* Разрешить переносы строк и пробелы */
+}
+
+.fondNavItemLink:hover{
+    color: #0973A7;
+
+}

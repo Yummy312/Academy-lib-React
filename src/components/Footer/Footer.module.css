@@ -1,0 +1,155 @@
+.footerTop{
+    background-color: #333333;
+    padding: 50px 0;
+}
+.footerRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.col{
+    display: flex;
+    flex: 0 1 18%;
+    flex-direction: column;
+}
+
+
+.col:not(:last-child){
+    margin-right: 10px
+}
+
+.colTitle{
+    color: #D0D0D0;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    min-height: 24px; 
+}
+
+.colList{
+    margin-top: 10px;
+}
+
+.colLink{
+    color: #9B9B9B;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.colItem{
+    overflow-wrap: break-word
+}
+
+.colItemWithIcon{
+    display: flex;
+    overflow-wrap: break-word
+}
+
+.colItemWithIcon img{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 6px;
+    width: 10px;
+    height: 15px;
+}
+
+.colNoTitle .colList{
+    margin-top: 44px; 
+
+}
+
+.colLink{
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.colLink:hover{
+    color: white;
+
+}
+
+.footerBottom{
+    display: flex;
+    padding: 20px 0;
+    background-color: #222222;
+    text-align: center;
+}
+
+.footerInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: start;
+}
+
+.footerInfo p{
+    color: #656565;
+    line-height: 17px;
+    font-size: 13px;
+}
+
+.footerBottomImg{
+    display: inline-block;
+    margin-top: 30px;
+    height: 31px;
+    width: 88px;
+}
+
+
+@media (max-width: 1202px) {
+
+    .col{
+        width: 241px;
+        margin-right: 20px;
+    }
+    .colItemWithIcon img{
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 29px;
+    }
+}
+
+
+@media (max-width: 998px){
+
+    
+    .footerRow{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col{
+        text-align: center;
+    }
+
+    .colList{
+        margin-top: 5px;
+    }
+
+    .colItemWithIcon{
+        text-align: justify;
+    }
+    .colItemWithIcon .colLink, .col{
+        width: 190px;
+        line-height: 22px;
+    }
+    .colItemWithIcon img{
+        margin-bottom: 17px;
+    }
+
+    .footerInfo{
+        flex-direction: column;
+    }
+    .footerSocialList{
+        order: -1;
+        margin-bottom: 20px;
+    }
+    .footerInfo p {
+        text-align: center;
+    }
+}

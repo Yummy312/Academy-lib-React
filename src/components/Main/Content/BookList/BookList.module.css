@@ -1,0 +1,57 @@
+.body{
+    padding-bottom: 70px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  cursor: pointer;
+  flex-wrap: wrap; /* Разрешаем перенос элементов */
+
+}
+
+.pagination li {
+  display: none; /* Скрываем все элементы */
+
+  list-style: none;
+  margin-right: 5px;
+}
+
+.pagination li a {
+  padding: 5px 10px;
+  color: #007bff;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.pagination li a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination li.active a {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.loading{
+    margin-bottom: 100px;
+}
+
+
+.pagination li:nth-child(-n+2), /* Показываем первые два элемента */
+.pagination li:nth-last-child(-n+2) { /* и последние два элемента */
+display: block;
+}
+
+  
+@media (max-width: 998px){
+    .body{
+        padding-bottom: 40px;
+    }
+
+}
+
+

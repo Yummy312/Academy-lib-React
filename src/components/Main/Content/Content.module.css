@@ -1,0 +1,20 @@
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.page{
+    width: 69%;
+}
+
+@media (max-width: 998px){
+    .content{
+        flex-direction: column;
+    }
+
+    .content > *, .sidebar >*{
+        width: 100%;
+    }
+}

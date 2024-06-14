@@ -1,0 +1,33 @@
+.breadCrumbs{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.breadCrumbsList{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadCrumbsItem{
+    position: relative;
+    margin-right: 13px;
+}
+
+.breadCrumbsItem:not(:last-child)::after {
+    position: absolute;
+    content: ' » ';
+    margin-left: 2px;
+    color: #777777;
+
+}
+
+.breadCrumbsItem:last-child a{
+    color: #1E76B2;
+}
+.breadCrumbsLink{
+    line-height: 17px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #777777;
+}

@@ -1,0 +1,258 @@
+
+.header{
+    background-color: white;
+
+}
+.headerTop{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 0;
+}
+
+.headerLogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerLogoImg{
+    width: 83px;
+    height: 55px;
+}
+
+.headerLogoText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 39px;
+
+}
+
+.headerLogoTextItem{
+    color: #0973A7;
+    line-height: 21px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.headerLogoTextItem:first-child{
+    font-style: normal;
+    font-size: 39px;
+    margin-bottom: 13px;
+}
+
+
+.headerLogoTextItem:last-child{
+    display: inline-block;
+    width: 257px;
+}
+
+
+.headerInfo{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.headerInfoImg{
+    width: 44px;
+    height: 44px;
+}
+
+.headerInfoNums{
+    display: flex;
+    flex-direction: column;
+    width: 181px;
+    margin-left: 10px;
+
+}
+
+.headerInfoNumsItem{
+    line-height: 21px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #555555;
+
+}
+
+.headerInfoNumsItem:hover{
+    color: #0973A7;
+
+}
+
+.searchBox{
+    position: relative; /* Относительное позиционирование контейнера */
+    display: inline-block; /* Чтобы содержимое занимало только необходимое пространство */
+}
+
+.headerInfoSearch{
+    width: 300px;
+    height: 34px;
+    border: 1px solid #CCCCCC;
+    padding-left: 13px;
+    padding-right: 50px; 
+    margin-left: 80px;
+}
+
+.searchIcon{
+    position: absolute; 
+    width: 15px;
+    height: 17px;
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+    height: 20px; 
+    width: 20px;
+    pointer-events: none; 
+}
+
+.headerBottom{
+    background-color: #1E76B2;
+
+}
+
+.headerNav{
+    display: flex;
+    align-items: center;
+    /* padding: 15px 0; */
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 80px;
+    min-height: 46px;
+}
+
+.headerNavItem{
+    display: inline-block;
+}
+
+.dropDown{
+    position:relative;
+    display: inline-block;
+}
+
+.headerNavItemLink{
+    display: inline-block;
+    color:white;
+    font-size: 14px;
+    position: relative;
+
+}
+
+.arrowBottom{
+    position: absolute;
+    top: 44%;
+    width: 19px;
+    height: 6px;
+
+}
+
+
+/* Медиа-запросы */
+
+@media (max-width: 1202px) {
+
+
+    /* ---------HEADER---------- */
+    .headerTop{
+       
+        justify-content: center;
+    }
+
+
+    .headerLogoText{
+        margin-left: 20px;
+    }
+   
+
+    .headerLogo{
+        margin-right: 25px;
+    }
+
+   
+
+    .headerInfoSearch{
+        margin-left: 35px;
+        width: 288px;
+    }
+    
+    .headerNav{
+        margin: 0 0;
+        
+    }
+}
+
+
+
+@media (max-width: 998px){
+
+    /* ---------HEADER---------- */
+    .container{
+        max-width: 750px;
+    }
+
+    .header{
+        border-bottom: 2px solid #1daaf0;
+    }
+    .headerInfo{
+        display: none;
+    }
+
+    .headerTop{
+        justify-content: flex-start;
+        margin-top: -15px;
+        padding-bottom: 10px;
+        
+        
+    }
+
+    .headerLogoText{
+        margin-left: 12px;
+
+    }
+
+    .headerLogoTextItem:first-child{
+        font-size: 24px;
+        margin-bottom: 5px;
+
+    }
+
+    .headerLogoTextItem:last-child{
+        font-size: 13px;
+        line-height: 15px;
+    }
+   
+    .headerNav{
+        display: none;
+    }
+
+    .headerLogoImg {
+        width: 70px;
+        height: 48px;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .headerLogoText{
+        margin-left: -9px;
+    }
+
+
+    .fondNavItemLink{
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+
+
+@media(max-width:340px){
+
+.headerLogoText {
+    margin-left: -16px;
+}
+
+}
