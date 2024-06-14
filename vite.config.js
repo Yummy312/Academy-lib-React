@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/Academy-lib-React/",
+  base: "/Academy-lib-React",
   plugins: [react()],
 })
